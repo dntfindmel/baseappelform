@@ -1,0 +1,83 @@
+:root {
+    ---Desaturated-red: hsl(0, 36%, 70%);
+    ---Soft-red: hsl(0, 93%, 68%);
+    ---Dark-grayish-red: hsl(0, 6%, 24%);
+    --Principal-font: 'Josefin Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--Principal-font);
+}
+
+.header__logo {
+    padding: 1.5rem 0 1.5rem 1rem;
+    width: 7rem;
+}
+
+.header__banner {
+    width: 100%;
+}
+
+.principal__title {
+   text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: var(---Dark-grayish-red);
+    padding: 3rem 0 1.5rem 0;
+}
+
+span {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: var(---Desaturated-red);
+    font-weight: 300;
+}
+
+.principal__text {
+    padding-left: 1rem;
+    width: 95%;
+    text-align: center;
+    color: var(---Desaturated-red);
+    padding-bottom: 3rem;
+}
+
+.input {
+    text-align: center;
+}
+
+#emailv {
+    width: 80%;
+    padding: .9rem ;
+    border-radius: 80px;
+    border: solid 1px var(---Desaturated-red);
+    margin-bottom: 4rem;
+}
+
+#emailv::placeholder {
+    color: var(---Desaturated-red);
+}
+
+input[type="image"] {
+    margin-bottom: -1.2rem;
+    margin-left: -62px;
+    background: transparent;
+    border-radius: 80px;
+    padding: .8rem 1.5rem;
+    border: 1px solid var(---Desaturated-red);
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+@media screen and (min-widht: 1440px) {
+    
+}
