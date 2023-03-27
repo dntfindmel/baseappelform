@@ -53,15 +53,22 @@ span {
 }
 
 .input {
-    text-align: center;
+    position: relative;
+    display: flex;
+    height: 50px;
+    margin: 20px;
+}
+
+.input * {
+    height: 100%;
 }
 
 #emailv {
-    width: 80%;
+    width: 100%;
     padding: .9rem ;
+    padding-right: 73px;
     border-radius: 80px;
     border: solid 1px var(---Desaturated-red);
-    margin-bottom: 4rem;
 }
 
 #emailv::placeholder {
@@ -69,15 +76,90 @@ span {
 }
 
 input[type="image"] {
-    margin-bottom: -1.2rem;
-    margin-left: -62px;
+    width: 70px;
+    position: absolute;
+    right: 0;
+    top: 0;
     background: transparent;
     border-radius: 80px;
     padding: .8rem 1.5rem;
     border: 1px solid var(---Desaturated-red);
     background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
 }
 
-@media screen and (min-widht: 1440px) {
-    
+.header__desktop {
+    display: none;
+}
+
+.logo__desktop {
+    display: none;
+}
+
+#message {
+    color: var(---Desaturated-red);
+    display: block;
+    margin-left: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1080px) {
+    body {
+        display: flex;
+        flex-direction: row-reverse;
+        background-image: url('../img/bg-pattern-desktop.svg');
+    }
+
+    .header__banner {
+        display: none;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .principal-container {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .header__desktop {
+        display: block;
+        width: 45rem;
+    }
+
+    .logo__desktop {
+        display: block;
+        width: 120px;
+        margin-bottom: 5rem;
+    }
+
+    .principal__text {
+        text-align: start;
+        padding: 0;
+    }
+
+    span {
+        font-size: 3.5rem;
+    }
+
+    .principal__title {
+        text-align: start;
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+    }
+
+    .input {
+        margin-top: 2rem; 
+    }
 }

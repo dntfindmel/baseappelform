@@ -1,9 +1,17 @@
-var button = document.querySelectorAll('#subv');
+var button = document.querySelector('#subv');
+var email = document.querySelector('#emailv');
+var message = document.getElementById('message');
 
-button.addEventListener('click', () => {
-    if (button.value != true ) {
-        button.value.src = './assets/img/icon-error.svg'
+button.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    if (!email.validity.valid) {
+        button.src = './assets/img/icon-error.svg'
+        button.style.background = 'hsl(0, 93%, 68%)';
+        message.innerHTML = 'please provide a valid email';
     } else {
-        button = button.value;
+        button.src = './assets/img/icon-arrow.svg';
+        button.style.background = null;
+        message.innerHTML = '';
     }
 })

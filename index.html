@@ -17,19 +17,21 @@
     <img src="./assets/img/logo.svg" alt="logo of base apparel" class="header__logo">
     <img src="./assets/img/hero-mobile.jpg" alt="Photo of a woman" class="header__banner">
   </header>
-
+  <img src="./assets/img/hero-desktop.jpg" alt="photo of a woman" class="header__desktop">
   <main>
     <section class="principal">
       <div class="principal-container">
-
+        <img src="./assets/img/logo.svg" alt="logo of base apparel" class="logo__desktop">
         
         <h1 class="principal__title"><span>We're</span> coming soon</h1>
         <p class="principal__text">Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-        <form class="input">
-        <input type="email" id="emailv" placeholder="Email Adress" required><input type="image" id="subv" src="./assets/img/icon-arrow.svg">
-      </form>
+      <fieldset class="input">
+        <input type="email" id="emailv" placeholder="Email Adress" required data-error="Please provide a valid email">
+        <input type="image" id="subv" src="./assets/img/icon-arrow.svg">
+      </fieldset>
+      <p id="message"></p>
     </div>
   </section>
 </main>
